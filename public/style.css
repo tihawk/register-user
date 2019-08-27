@@ -6,13 +6,17 @@
 }
 
 body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 2em;
+  background: rgb(170, 224, 224);
+  margin: 0px;
 }
 
 h1 {
-  font-style: italic;
-  color: #373fff;
+  text-decoration: underline;
 }
 
 .bold {
@@ -24,23 +28,29 @@ p {
 }
 
 form {
-  margin-bottom: 25px;
-  padding: 15px;
-  background-color: cyan;
-  display: inline-block;
-  width: 100%;
-  max-width: 340px;
-  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+  width: 50%;
+  min-height: 400px;
+  min-width: 400px;
+  box-shadow: 10px 10px 40px black;
+  text-align: center;
+  color: darkcyan;
 }
 
 input {
   display: block;
-  margin-bottom: 10px;
+  
+  margin: 5px 15% 10px 15%;
   padding: 5px;
-  width: 100%;
+  width: 70%;
   border: 1px solid lightgrey;
   border-radius: 3px;
   font-size: 16px;
+  box-sizing: border-box;
 }
 
 button {

@@ -4,7 +4,7 @@ const express = require('express');
 // Database
 const fs = require('fs');
 const path = require('path');
-const dbFile = path.join(__dirname, '.sqlite.db')
+const dbFile = path.join(__dirname, 'sqlite.db')
 let exists = fs.existsSync(dbFile);
 const sqlite3 = require('sqlite3').verbose();
 let db = new sqlite3.Database(dbFile);
@@ -13,6 +13,10 @@ const app = express();
 app.use(express.static( path.join(__dirname, 'public') ));
 app.use(express.json());
 app.use(express.urlencoded());
+
+app.listen(3000, () => {
+    console.log("Server: Listening on port 3000");
+});
 
 // check if database file exists, and act accordingly
 db.serialize(() => {
@@ -74,8 +78,4 @@ app.post('/user/register', (req, res) => {
     });
 
     db.close();
-});
-
-app.listen(3000, () => {
-    console.log("Server: Listening on port 3000");
 });
