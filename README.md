@@ -4,7 +4,7 @@ This application uses [NodeJS](https://nodejs.org/en/), so to run it NodeJS has 
 ## To install:
 1. Download and extract into a folder
 1. Open a terminal in the folder
-1. Run `npm install -i` to install all dependencies
+1. Run `npm install` to install all dependencies
 
 ## To run:
 1. Run `npm start` to start the server. This should:
