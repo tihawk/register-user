@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <!-- import the webpage's stylesheet -->
+        <link rel="stylesheet" href="/style.css">
+    
+        
+    </head>
+
+    <body>
+        <div class="container">
+            <form action="/user/register" method="post" name='form'>
+                <h3>Register a new User</h3>
+                <input type="text" id="fName" name="firstName" placeholder="First Name" required>
+                <input type="text" id="lName" name="lastName" placeholder="Last Name" required >
+                <input type="text" id="address" name="address" placeholder="Address" required>
+                <input type="tel" id="telNum" name="telNumber" placeholder="Telephone Number" pattern="^[\d\(\)\-+]{6,}$" required>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <input type="submit" value="Register">
+            </form>            
+        </div>
+
+    </body>
+
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" ></script>
+
+</html>

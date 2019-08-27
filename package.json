@@ -1,0 +1,16 @@
+{
+  "name": "test_task",
+  "version": "1.0.0",
+  "description": "A REST API test task with the capability to add users to a data-base",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kiril P. Blagoev",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sqlite3": "^4.1.0"
+  }
+}
