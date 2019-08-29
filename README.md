@@ -5,6 +5,7 @@ This application uses [NodeJS](https://nodejs.org/en/), so to run it NodeJS has 
 1. Download and extract into a folder
 1. Open a terminal in the folder
 1. Run `npm install` to install all dependencies
+1. If there are dependency issues during the server starting process, try using `npm rebuild`.
 
 ## To run:
 1. Run `npm start` to start the server. This should:
